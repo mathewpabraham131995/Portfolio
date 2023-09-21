@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dissertation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="mathew_portfolio.html" class="logo"><strong>Home</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="mathew_portfolio.html">Home</a></li>
+						<li><a href="work_experience.html">Work Experience</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="skills.html">Skills</a></li>
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="pdfs/Mathew Abraham - CV.pdf" class="button primary fit">My Resume</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>#TheKerlaStory: Investigating the Rise, Discussions and </br> Manipulation of 
+											Socio-Political Trends on X (Twitter) In India</h1>
+									</header>
+									<h2 id="content">Introduction</h2>
+									<!--span class="image main"><img src="images/pic11.jpg" alt="" /></span-->
+									<p>On May 5th, 2023, 'The Kerala Story,' a film released in India, stirred significant controversy due to distorting facts 
+										and targeting certain communities and regions in the country. Widely perceived as a propaganda film, it garnered applause 
+										particularly from right-wing leaders across the nation. The situation took a more drastic turn on May 8th when the 
+										Prime Minister himself endorsed the film, sparking a surge in discussions and debates. Notably, several keywords related 
+										to the movie began trending on the social media platform X.</br>
+									</p>
+									<p>
+										This sudden spike in discussions coincided with three adverse events for the ruling party:</br>
+										1. The ongoing legislative assembly elections in Karnataka.</br>
+										2. The wrestlers' protest against the incumbent sports minister, Mr. Brij Bhushan Singh, who faced multiple allegations of sexual assault.</br>
+										3. The Civil unrest in Manipur, where the government had imposed an internet shutdown on May 6th.
+									</p>
+									<p>
+										This project was undertaken to delve into the possibility that the surge in discussions around this propaganda movie might have been strategically 
+										manipulated to divert attention from these unfavorable events. By examining the data and trends, we sought to shed light on this 
+										intriguing aspect of contemporary discourse
+									</p>
+									<h2 id="content">Identifying topics discussed in mainstream media</h2>
+									<p>To assess the prominence and efficacy of these discussions in diverting attention from the other events, I conducted an analysis of tweets 
+										from two influential Indian news media outlets, namely Times Now and AajTak. By collecting tweets from these sources over the 
+										course of a month, I generated word clouds to facilitate a rapid assessment of the primary topics under discussion. This approach 
+										allowed for a swift and insightful analysis of the prevailing discourse.</p>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-6"><span class="image fit"><img src="images/TimeNow.png" alt="test" /><figcaption>Fig.1 - Topics discussed in Times Now.</figcaption></span></div>
+												<div class="col-6"><span class="image fit"><img src="images/aajtak.png" alt="test2" /><figcaption>Fig.2 - Topics discussed in AajTak.</figcaption></span></div>
+											</div>
+										</div>
+									<p></br>While analysing the two word clouds, common themes emerge, including discussions on Karnataka's elections and the Parliament. The Karnataka elections, marked by intense campaigning 
+										and significant media coverage, naturally led to increased online discourse, with keywords like Karnataka, Siddaramaiah, and chief
+										 minister featuring prominently. Additionally, the inauguration of India's new parliament building garnered substantial media 
+										 attention. Notably, "The Kerala Story" appeared in both discussions, with clearer prominence in the Times Now word cloud. </br>
+										 Beyond mainstream media discussions, the two significant events: the wrestlers' protests against the sports minister facing 
+										 sexual assault allegations and the civil unrest in Manipur, marked by an internet shutdown and disturbing incidents received limited 
+										 attention. Intriguingly, these events were somewhat eclipsed by discussions related to the film 'The Kerala Story,' raising questions about the 
+										 prioritization of topics in media discourse, particularly when minority group protests and critical issues are involved.
+									</p>
+									<h2 id="content">Detecting manipulation in the discourse</h2>
+									<p>In early May, particularly after May 5th when the Prime Minister of the country integrated a movie into his political campaign, 
+										numerous keywords related to the movie started trending on social media platform X. To identify these trending keywords, 
+										we utilized an online resource called the Twitter Trending Archive. Given the limitations of the project only one trend 
+										was picked to be analysed: #TheKerlaStory for which we were able to scrape 12,272 tweets containing the keyword.</br>
+										A time series graph illustrated a sudden surge in posts starting on May 6th, 2023. This spike could be attributed to the movie's release on May 5th 
+										and the Prime Minister's campaign on the same day. We also examined the languages used in these discussions, revealing a diverse 
+										array with Hindi, English, Marathi, and Bengali being predominant.
+										</p>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-7"><span class="image fit"><img src="images/Tweet_Time_Series.jpg" alt="test" /><figcaption>Fig. 3 - Time series graph indicating surge in discussions.</figcaption></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/LanguagesUsed.png" alt="test2" /><figcaption>Fig. 4 - The major languages in play.</figcaption></span></div>
+											</div>
+										</div>
+									<p>Furthermore, I investigated the possibility of trend manipulation using a metric called the Coefficient of Traffic Manipulation (CTM). 
+										The CTM metric proposed in a 2019 research paper, made use of the following metrics such as the ratio of retweets in the total dataset, 
+										the percentage of tweets from the most active 50 users and the average posts per user. </br>I implemented the metric to the dataset of tweets 
+										I collected and the CTM value for #TheKerlaStory was calculated to be 18.49, surpassing the lower limit of CTM values found for manipulated 
+										trends in previous studies. The values for the other parameters are listed in the table below. 
+										
+										<div class="table-wrapper">
+											<table>
+												<caption >Table 1. CTM Parameters</caption>
+												<thead>
+													<tr>
+														<th></th>
+														<th>Overall</th>												
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Average Posts per Users</td>
+														<td>1.53</td>														
+													</tr>
+													<tr>
+														<td>Retweets Ratio/10</td>
+														<td>8.6</td>														
+													</tr>
+													<tr>
+														<td>Top 50 post proportion</td>
+														<td> 8.54</td>														
+													</tr>		
+													<tr>
+														<td>CTM</td>
+														<td> 18.49</td>														
+													</tr>												
+											</table>
+										</div>
+									</br>The average posts per user (1.53) aligned with 
+										values observed in organic trends, while the proportion of tweets dominated by the top 50 accounts (8.54%) fell within the lower range observed 
+										in manipulated trends, suggesting potential manipulation by a select group of users. Additionally, a significant proportion of tweets (86.5%) were 
+										retweets which indicated high manipulation, although the method used to calculate this proportion had some limitations. Overall, the high CTM value 
+										and the other parameters cast doubts on the genuineness of the discourse around #TheKerlaStory.
+									</p>
+									<h2 id="content">Sentiment Analysis and Stance Detection</h2>
+									<p>
+										The analysis of tweets involved assessing sentiment and polarization levels in the discourse. A time series graph 
+										displayed the results of sentiment analysis using VADER, revealing the presence of positive, neutral, and negative sentiments, 
+										with no clear dominance. However, it was observed that a higher number of tweets were exhibiting positive sentiments.
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-5"><span class="image fit"><img src="images/Sentiment_Analysis.png" alt="test2" /><figcaption>Fig. 5 - A time series of sentiments expressed.</figcaption></span></div>
+											</div>
+										</div>
+									</p>
+									<h3 id="content">Stance Detection - Fine tuning BERT models</h3>
+									<p>
+										Conventional sentiment analysis proved insufficient for assessing the polarization levels in the discourse.
+										 To delve deeper into this aspect, I leveraged two NLP models, BERT and BERTweet, for stance detection. However, 
+										 implementing this required fine-tuning these models on my training dataset, which involved labeling the stance of 1200 tweets.
+
+										To facilitate the labelling process, I designed a user-friendly interface where I could easily assign a tweet's stance through a simple 
+										button click, as depicted in Figure 6. The tweets were categorized into one of four stances: Supporter, Against, Manipulator, or Neutral.
+										The results of the annotation process unveiled a notable bias towards the discussed topics.
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-8"><span class="image fit"><img src="images/User_Interface.png" alt="" /><figcaption>Fig. 6 - The user interface created to annotate tweets.</figcaption></span></div>
+											</div>
+										</div>
+										BERTweet exhibited higher test accuracy and F-1 scores in classifying supporter and neutral stances, while BERT performed slightly better 
+										in identifying against and manipulator stances. The classification report of the BERTweet model is shown in table 2 below. </br></p>
+										<div class="table-wrapper">
+											<table>
+												<caption >Table 2. BERTweet Classification Report</caption>
+												<thead>
+													<tr>
+														<th></th>
+														<th>Precision</th>
+														<th>Recall</th>	
+														<th>F1-Score</th>
+														<th>Support</th>													
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Supporter</td>
+														<td>0.822</td>
+														<td>0.718</td>
+														<td>0.767</td>
+														<td>135</td>														
+													</tr>
+													<tr>
+														<td>Against</td>
+														<td>1</td>
+														<td>0.125</td>
+														<td>0.222</td>
+														<td>16</td>														
+													</tr>
+													<tr>
+														<td>Manipulator</td>
+														<td>0.53</td>
+														<td>0.765</td>
+														<td>0.626</td>
+														<td>34</td>														
+													</tr>		
+													<tr>
+														<td>Neutral</td>
+														<td>0.442</td>
+														<td>0.704</td>
+														<td>0.543</td>
+														<td>27</td>															
+													</tr>
+													<tr>
+														<td>Accuracy</td>
+														<td>0.679</td>
+														<td>0.679</td>
+														<td>0.679</td>
+														<td>0.679</td>															
+													</tr>
+													<tr>
+														<td>Weighted Average</td>
+														<td>0.74</td>
+														<td>0.679</td>
+														<td>0.674</td>
+														<td>212</td>															
+													</tr>													
+											</table>
+										</div>
+									<p>
+										The findings suggested that the models were good in identifying supporter stances due to the abundance of supportive tweets. However, they struggled with 
+										minority classes. Imbalanced datasets posed a limitation, and cost-sensitive learning approaches may be needed in the future. </br>
+										The BERTweet model, fine-tuned on labeled data, was then applied to the parent dataset of unlabelled tweets to analyze stances. 
+										The results were visualized in a time series graph, shown in figure 7, highlighting the one-sided nature of the discourse, with supporters of the agenda 
+										overshadowing those against it. Manipulator accounts played a role in amplifying trends, although their classification was solely based on content analysis, lacking additional user details analysis.
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-7"><span class="image fit"><img src="images/Predictions.png" alt="" /><figcaption>Fig. 7 - Time series of stances expressed throughout the discourse. </figcaption></span></div>
+											</div>
+										</div>
+									</p>
+									<h2 id="content">Analysing the topics dicussed by each group</h2>
+									<p>
+										Using the predicted labels, the content shared by users belonging to each of the four groups is examined through word clouds based on their exhibited stance.</br>
+										Figure 8 displays the content posted by users supporting the trend and the movie. Notable elements include various spellings of the movie's name, mentions of the
+										state of West Bengal, and keywords related to women's safety, such as 'daughter,' 'sister,' and 'girl.' Discussions on tax exemptions in certain states and 
+										religious references ('Hindu' and 'Muslim') are also present, along with terms like 'truth' and 'reality,' which amplify claims that were debunked.</br>
+										Figure 9 presents word clouds for tweets from users classified as against the agenda. Prominent terms include 'propaganda,' 'lie,' 'hatred,' and 'false,' 
+										reflecting the critical stance taken by these users.
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-6"><span class="image fit"><img src="images/Wordcloud_supporter.png" alt="test" /><figcaption>Fig. 8 - Word cloud of tweets belonging to 'Supporters'</figcaption></span></div>
+												<div class="col-6"><span class="image fit"><img src="images/Wordcloud_against.png" alt="test2" /><figcaption>Fig. 9 - Word cloud of tweets that are against the agenda.</figcaption></span></div>
+											</div>
+										</div>
+									</p>
+									<p>
+										Figure 10 showcases the word cloud for tweets labelled as manipulators. Notably, this word cloud features numerous hashtags and unrelated terms such as 'KarnatakaElection,' 'MIvsRCB,' 'AdipurushTrailer,' 
+										and unrelated celebrity names like 'Prabhas' and 'ViratKohli.'</br>
+										Finally, Figure 11 presents the word cloud for neutral tweets, including posts from news outlets. This cloud highlights discussions related to the West Bengal ban, the movie's tax-free status in certain 
+										states, and the Supreme Court's rulings regarding the movie.</br>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-6"><span class="image fit"><img src="images/wordcloud_manipulator.png" alt="test" /><figcaption>Fig. 10 - Word cloud of tweets that belong to 'Manipulators'</figcaption></span></div>
+												<div class="col-6"><span class="image fit"><img src="images/Wordcloud_neutral.png" alt="test2" /><figcaption>Fig. 11 - Word cloud of tweets classified as neutral.</figcaption></span></div>
+											</div>
+										</div>
+									</p>
+									<h2 id="content"> Stance detection over conventional sentiment analysis techniques</h2>
+									<p>
+										Stance detection surpasses conventional sentiment analysis when analyzing politically charged or sensitive topics. The limitations of traditional sentiment analysis techniques were demonstrated earlier, as seen in Figure 5's 
+										time series graph using VADER sentiment scores, which failed to capture the extent of polarization or one-sidedness during the discourse. In contrast, the time series graph generated using labels from the stance detection model, 
+										displayed in Figure 7, effectively addresses this limitation. Figure 12 reinforces this point by illustrating the stances exhibited for each sentiment category. Notably, supporters of the trend and movie expressed all three sentiments, 
+										underscoring the importance of employing NLP techniques capable of understanding context and nuance.</br>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+											<div class="col-8"><span class="image fit"><img src="images/Stances_sentiments.png" alt="test" /><figcaption>Fig. 12 - Stances expressed in each sentiment.</figcaption></span></div>
+											</div>
+										</div>
+									</p>
+									<p>
+										The study builds upon its previous objectives by combining its findings with the socio-political events that occurred during this period to create a comprehensive timeline of events. This timeline strengthens the assumption of trend manipulation.
+										The first research objective highlighted mainstream news media's focus on "The Kerala Story." Word clouds in Figures 1 and 2 reveal that key events threatening government stability were either diluted or conspicuously absent from media coverage. 
+										Previous studies have shown that media can lean towards certain political ideologies and intensify partisan bias among viewers.</br>
+										The first event was the civil unrest in Manipur, which included the disturbing incident of two women from a tribe being paraded naked. Action against the perpetrators only occurred after a viral video clip on X sparked widespread outrage, 77 days 
+										after the incident. </br>The media's coverage of wrestlers protesting the national sports minister has also faced criticism for bias, with India's Olympic medallists forced to camp in the streets to draw attention to sexual assault complaints against the minister.</br>
+										We then use the metric CTM to investigate manipulation in the discourse that took place through which we see that the values of CTM aligns with those of manipulated trends. The study further explores tweets related to movie discussions, where the stances expressed
+										by the users are analysed revealing high levels of partisanship.
+										There have been instances of political trends being manipulated on X in response to threats to incumbent authorities. The study highlights three key events that could potentially destabilize the government. These events, along with spikes in discussion, are incorporated 
+										into a timeline of events (Figure 13) that supports the theory that this trend was manipulated to polarize and divert attention from the shortcomings of ruling political factions.
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+											<div class="col-8"><span class="image fit"><img src="images/Timeline.png" alt="test" /><figcaption>Fig. 13 - Timeline of events.</figcaption></span></div>
+											</div>
+										</div>
+									</p>
+									<p>
+										The findings of this study underscore the importance of understanding the multi-faceted nature of online campaigns and their potential to manipulate perceptions of the public. The investigation into the discussions that arose from the movie ‘The Kerala Story’ revealed
+										patterns of manipulation, which, though not entirely unexpected provides important insights into strategies employed by certain actors to shape narratives and divert attention from pressing socio-political issues. 
+									</p>
+									<p>
+										The source code for this project can be be found <a href="https://github.com/mathewpabraham131995/Dissertation" target="_blank">here.</a> 
+									</p>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="mailto:mathewpabraham13@gmail.com">mathewpabraham13@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>+4407833809671</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>Sheffield, UK</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://github.com/mathewpabraham131995" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/mathewpabraham13" class="icon brands alt fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
